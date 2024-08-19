@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Accident Report Form</h1>
+        <form id="accidentForm">
+            <div class="form-section">
+                <label for="dateOfAccident">Date of Accident:</label>
+                <input type="date" id="dateOfAccident" name="dateOfAccident" required>
+            </div>
+            <div class="form-section">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-section">
+                <label for="driverName">Driver's Name:</label>
+                <input type="text" id="driverName" name="driverName" required>
+            </div>
+            <div class="form-section">
+                <label for="vehicleInfo">Vehicle Info:</label>
+                <input type="text" id="vehicleInfo" name="vehicleInfo" required>
+            </div>
+            <div class="form-section">
+                <label for="insuranceInfo">Insurance Info:</label>
+                <input type="text" id="insuranceInfo" name="insuranceInfo" required>
+            </div>
+            <button type="submit">Submit Report</button>
+        </form>
+
+        <div class="report-list">
+            <h2>Existing Reports</h2>
+            <ul id="reportList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
